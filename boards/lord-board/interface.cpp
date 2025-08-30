@@ -93,10 +93,10 @@ void InputHandler(void) {
                 {
                     int tmp = tx;
                     tx = ty;
-                    ty = (tftHeight + 20) - tmp;
+                    ty = (tftHeight + 0) - tmp; //calibrate in real time
                 } break;
                 case 1: // landscape inverted
-                    ty = (tftHeight + 20) - ty;
+                    ty = (tftHeight + 0) - ty; //calibrate in real time
                     tx = tftWidth - tx;
                     break;
             }
